@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_codebase/core/theme/app_spacing.dart';
+import 'package:flutter_codebase/core/widgets/deck_widget.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class HomeView extends ConsumerWidget {
@@ -7,7 +9,12 @@ class HomeView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      body: SafeArea(child: Container(child: Text('jdhvfj'))),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(AppSpacing.md),
+          child: DeckWidget(),
+        ),
+      ),
     );
   }
 }
