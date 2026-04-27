@@ -3,9 +3,9 @@ import 'package:flutter_codebase/core/theme/app_radius.dart';
 import 'package:flutter_codebase/core/theme/app_spacing.dart';
 import 'package:flutter_codebase/core/theme/app_typography.dart';
 
-// #9768FE
 class DeckWidget extends StatelessWidget {
-  const DeckWidget({super.key});
+  final Deck deck;
+  const DeckWidget({super.key, required this.deck});
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +76,7 @@ class DeckWidget extends StatelessWidget {
                   Text(
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    'Groceries',
+                    deck.title,
                     style: AppTypography.textTheme.bodyMedium?.copyWith(
                       color: Colors.white,
                     ),
@@ -85,15 +85,15 @@ class DeckWidget extends StatelessWidget {
                   RichText(
                     text: TextSpan(
                       children: [
+                        // TextSpan(
+                        //   text: r'$ ',
+                        //   style: AppTypography.textTheme.bodyMedium?.copyWith(
+                        //     color: Colors.white.withOpacity(0.8),
+                        //     fontWeight: FontWeight.w600,
+                        //   ),
+                        // ),
                         TextSpan(
-                          text: r'$ ',
-                          style: AppTypography.textTheme.bodyMedium?.copyWith(
-                            color: Colors.white.withOpacity(0.8),
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        TextSpan(
-                          text: '1,245.30',
+                          text: deck.amount.toString(),
                           style: AppTypography.textTheme.headlineSmall
                               ?.copyWith(
                                 color: Colors.white,
@@ -111,4 +111,11 @@ class DeckWidget extends StatelessWidget {
       ],
     );
   }
+}
+
+class Deck {
+  final String title;
+  final double amount;
+
+  const Deck({required this.title, this.amount = 0.0});
 }

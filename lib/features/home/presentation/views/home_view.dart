@@ -12,7 +12,7 @@ class HomeView extends ConsumerWidget {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(AppSpacing.md),
-          child: DeckWidget(),
+          child: DeckWidget(deck: Deck(title: 'Groceries', amount: 1245.30)),
         ),
       ),
     );
