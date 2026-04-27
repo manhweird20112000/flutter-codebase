@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_codebase/core/theme/app_spacing.dart';
 import 'package:flutter_codebase/core/widgets/deck_widget.dart';
+import 'package:flutter_codebase/core/widgets/flash_card_widget.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class HomeView extends ConsumerWidget {
@@ -12,7 +13,7 @@ class HomeView extends ConsumerWidget {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(AppSpacing.md),
-          child: DeckWidget(deck: Deck(title: 'Groceries', amount: 1245.30)),
+          child: FlashCardWidget(),
         ),
       ),
     );
