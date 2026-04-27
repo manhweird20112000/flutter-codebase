@@ -18,4 +18,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get increment => 'Increment';
+
+  @override
+  String get flashcards => 'Flashcards';
+
+  @override
+  String get next => 'Next';
+
+  @override
+  String get previous => 'Previous';
+
+  @override
+  String get flip => 'Flip';
+
+  @override
+  String get tapToFlip => 'Tap to Flip';
 }

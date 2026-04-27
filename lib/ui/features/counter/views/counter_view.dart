@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_codebase/generated/l10n/app_localizations.dart';
 import 'package:flutter_codebase/ui/features/counter/view_models/counter_view_model.dart';
@@ -22,6 +23,15 @@ class CounterView extends ConsumerWidget {
             Text(
               l10n.counterValue(counterValue),
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            const SizedBox(height: 24),
+            ElevatedButton.icon(
+              onPressed: () => context.push('/flashcards'),
+              icon: const Icon(Icons.style),
+              label: Text(l10n.flashcards),
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              ),
             ),
           ],
         ),

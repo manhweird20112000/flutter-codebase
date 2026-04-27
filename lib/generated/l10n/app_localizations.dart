@@ -115,6 +115,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Increment'**
   String get increment;
+
+  /// Title for the Flashcards feature
+  ///
+  /// In en, this message translates to:
+  /// **'Flashcards'**
+  String get flashcards;
+
+  /// Button to go to the next flashcard
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get next;
+
+  /// Button to go to the previous flashcard
+  ///
+  /// In en, this message translates to:
+  /// **'Previous'**
+  String get previous;
+
+  /// Button to flip the flashcard
+  ///
+  /// In en, this message translates to:
+  /// **'Flip'**
+  String get flip;
+
+  /// Hint text for the flashcard
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to Flip'**
+  String get tapToFlip;
 }
 
 class _AppLocalizationsDelegate

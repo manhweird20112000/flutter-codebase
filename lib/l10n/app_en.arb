@@ -16,5 +16,25 @@
   "increment": "Increment",
   "@increment": {
     "description": "Tooltip for increment button"
+  },
+  "flashcards": "Flashcards",
+  "@flashcards": {
+    "description": "Title for the Flashcards feature"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Button to go to the next flashcard"
+  },
+  "previous": "Previous",
+  "@previous": {
+    "description": "Button to go to the previous flashcard"
+  },
+  "flip": "Flip",
+  "@flip": {
+    "description": "Button to flip the flashcard"
+  },
+  "tapToFlip": "Tap to Flip",
+  "@tapToFlip": {
+    "description": "Hint text for the flashcard"
   }
 }

@@ -2,5 +2,10 @@
   "@@locale": "vi",
   "appTitle": "Ứng dụng Flutter Cơ bản",
   "counterValue": "Giá trị bộ đếm: {value}",
-  "increment": "Tăng lên"
+  "increment": "Tăng lên",
+  "flashcards": "Thẻ ghi nhớ",
+  "next": "Tiếp theo",
+  "previous": "Trước đó",
+  "flip": "Lật",
+  "tapToFlip": "Chạm để lật"
 }

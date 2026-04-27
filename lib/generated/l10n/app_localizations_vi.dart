@@ -18,4 +18,19 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get increment => 'Tăng lên';
+
+  @override
+  String get flashcards => 'Thẻ ghi nhớ';
+
+  @override
+  String get next => 'Tiếp theo';
+
+  @override
+  String get previous => 'Trước đó';
+
+  @override
+  String get flip => 'Lật';
+
+  @override
+  String get tapToFlip => 'Chạm để lật';
 }
