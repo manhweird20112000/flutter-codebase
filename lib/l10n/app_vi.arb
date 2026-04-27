@@ -1,0 +1,6 @@
+{
+  "@@locale": "vi",
+  "appTitle": "Ứng dụng Flutter Cơ bản",
+  "counterValue": "Giá trị bộ đếm: {value}",
+  "increment": "Tăng lên"
+}

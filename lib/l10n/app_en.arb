@@ -1,0 +1,20 @@
+{
+  "@@locale": "en",
+  "appTitle": "Flutter Base App",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "counterValue": "Counter Value: {value}",
+  "@counterValue": {
+    "description": "Shows the current counter value",
+    "placeholders": {
+      "value": {
+        "type": "int"
+      }
+    }
+  },
+  "increment": "Increment",
+  "@increment": {
+    "description": "Tooltip for increment button"
+  }
+}
