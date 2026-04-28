@@ -11,6 +11,8 @@ class HomeView extends ConsumerWidget {
   void _showBottomSheetAction(BuildContext context) {
     showModalBottomSheet(
       context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
       builder: (BuildContext context) {
         return const BottomSheetAction();
       },
@@ -32,8 +34,16 @@ class HomeView extends ConsumerWidget {
             ),
             itemCount: 6,
             itemBuilder: (context, index) {
+              final colors = [
+                const Color(0xFFFF5C5C),
+                const Color(0xFFFFD600),
+                const Color(0xFF00C853),
+                const Color(0xFF00B0FF),
+                const Color(0xFFFF4081),
+                const Color(0xFF9768FE),
+              ];
               return DeckWidget(
-                deck: Deck(title: 'Deck $index', amount: 12345),
+                deck: Deck(title: 'Deck $index', amount: (index + 1) * 10),
               );
             },
           ),
