@@ -6,11 +6,7 @@ import 'core/theme/app_theme.dart';
 import 'core/router/router.dart';
 
 void main() {
-  runApp(
-    const ProviderScope(
-      child: MyApp(),
-    ),
-  );
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {

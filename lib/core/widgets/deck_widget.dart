@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_codebase/core/theme/app_colors.dart';
 import 'package:flutter_codebase/core/theme/app_radius.dart';
 import 'package:flutter_codebase/core/theme/app_spacing.dart';
 import 'package:flutter_codebase/core/theme/app_typography.dart';
@@ -15,16 +16,15 @@ class DeckWidget extends StatelessWidget {
           height: 160,
           width: 200,
           decoration: BoxDecoration(
-            color: Color(0xFF6338C2), // Darker purple for background
+            color: AppColors.primary, // Darker purple for background
             borderRadius: AppRadius.brXL,
           ),
           child: Padding(
             padding: EdgeInsets.all(12),
             child: Container(
               decoration: BoxDecoration(
-                color: Color(
-                  0xFFF3EFFF,
-                ), // Slightly off-white for the background card surface
+                color: AppColors
+                    .surface, // Slightly off-white for the background card surface
                 borderRadius: AppRadius.brLG,
               ),
             ),
@@ -37,17 +37,17 @@ class DeckWidget extends StatelessWidget {
           child: Container(
             width: double.infinity,
             decoration: BoxDecoration(
-              color: Color(0xFF9768FE),
+              color: AppColors.secondary,
               borderRadius: AppRadius.brXL,
-              border: BoxBorder.all(
-                color: Colors.white.withValues(alpha: 0.1),
+              border: Border.all(
+                color: AppColors.white.withValues(alpha: 0.1),
                 width: 1,
               ),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.1),
+                  color: AppColors.black.withOpacity(0.1),
                   blurRadius: 10,
-                  offset: Offset(0, 4),
+                  offset: const Offset(0, 4),
                 ),
               ],
             ),
@@ -61,14 +61,13 @@ class DeckWidget extends StatelessWidget {
                     width: 32,
                     height: 32,
                     decoration: BoxDecoration(
-                      color: Color(
-                        0xFF794FD8,
-                      ), // Darker purple for icon background
+                      color:
+                          AppColors.accent, // Darker purple for icon background
                       borderRadius: AppRadius.brMD,
                     ),
                     child: const Icon(
                       Icons.shopping_bag_rounded,
-                      color: Colors.white,
+                      color: AppColors.white,
                       size: 18,
                     ),
                   ),
@@ -78,7 +77,7 @@ class DeckWidget extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     deck.title,
                     style: AppTypography.textTheme.bodyMedium?.copyWith(
-                      color: Colors.white,
+                      color: AppColors.white,
                     ),
                   ),
                   SizedBox(height: AppSpacing.xs),
@@ -96,7 +95,7 @@ class DeckWidget extends StatelessWidget {
                           text: deck.amount.toString(),
                           style: AppTypography.textTheme.headlineSmall
                               ?.copyWith(
-                                color: Colors.white,
+                                color: AppColors.white,
                                 fontWeight: FontWeight.w900,
                               ),
                         ),
